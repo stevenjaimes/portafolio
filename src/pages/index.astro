@@ -1,17 +1,17 @@
 ---
-import Layout from "@/layouts/Layout.astro"
+import Layout from "@/layouts/Layout.astro";
 
-import AboutMe from "@/components/AboutMe.astro"
-import Briefcase from "@/components/icons/Briefcase.astro"
-import CodeIcon from "@/components/icons/Code.astro"
-import Experience from "@/components/Experience.astro"
-import ProfileCheck from "@/components/icons/ProfileCheck.astro"
-import Projects from "@/components/Projects.astro"
-import SectionContainer from "@/components/SectionContainer.astro"
-import Hero from "@/components/Hero.astro"
-import TitleSection from "@/components/TitleSection.astro"
-import Technologies from "@/components/Technologies.astro" 
-import VideoEditing from "@/components/VideoEditing.astro"
+import AboutMe from "@/components/AboutMe.astro";
+import Briefcase from "@/components/icons/Briefcase.astro";
+import CodeIcon from "@/components/icons/Code.astro";
+import Experience from "@/components/Experience.astro";
+import ProfileCheck from "@/components/icons/ProfileCheck.astro";
+import Projects from "@/components/Projects.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import Hero from "@/components/Hero.astro";
+import TitleSection from "@/components/TitleSection.astro";
+import Technologies from "@/components/Technologies.astro";
+import VideoEditing from "@/components/VideoEditing.astro";
 ---
 
 <Layout
@@ -20,11 +20,10 @@ import VideoEditing from "@/components/VideoEditing.astro"
 >
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
-      <Hero>
-      </slot>
-    </Hero>
+      <Hero />
     </SectionContainer>
-    <div class="space-y-24">
+  </main>
+  <div class="space-y-24">
     <SectionContainer id="experiencia">
       <TitleSection>
         <Briefcase class="size-8" />
@@ -42,7 +41,12 @@ import VideoEditing from "@/components/VideoEditing.astro"
     </SectionContainer>
 
     <SectionContainer id="video-edicion">
-      <VideoEditing /> 
+      <VideoEditing />
+    </SectionContainer>
+
+    <SectionContainer id="tecnologias">
+      <Technologies />
+      <!-- Sección añadida -->
     </SectionContainer>
 
     <SectionContainer id="sobre-mi">
@@ -52,11 +56,5 @@ import VideoEditing from "@/components/VideoEditing.astro"
       </TitleSection>
       <AboutMe />
     </SectionContainer>
-
-    <SectionContainer id="tecnologias">
-      <Technologies /> <!-- Sección añadida -->
-    </SectionContainer>
-
   </div>
-  </main>
 </Layout>

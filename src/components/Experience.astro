@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Desarrollador Web",
+    company: "Freelance",
+    description:
+      "💼 Experiencia como freelance desarrollando e-commerce, dashboards y sitios web a medida para diversos clientes. Apasionado por brindar soluciones funcionales y atractivas que marcan la diferencia en el mundo digital",
+    link: "https://stevdevblog.netlify.app/",
+  },
+  {
+    date: "Septiembre 2022 - Septiembre 2023",
+    title: "Principal Frontend Engineer",
+    company: "Geff Shirts",
+    description:
+      "💼 Experiencia 2022-2023: Creación y desarrollo de un sitio web profesional para una empresa de venta de ropa deportiva. Incluyó la implementación de funcionalidades personalizadas, optimización para SEO y diseño responsivo, mejorando significativamente la presencia en línea y la captación de clientes",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

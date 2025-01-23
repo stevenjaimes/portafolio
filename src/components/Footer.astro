@@ -1,0 +1,33 @@
+---
+const currentYear = new Date().getFullYear()
+---
+
+<footer class="opacity-80 m-4 min-[375px]:pl-4 md:pl-0 mt-16 w-full mx-auto container lg:max-w-4xl md:max-w-2xl mb-10 flex flex-col justify-between">
+  <div class="flex flex-col md:flex-row justify-between items-start w-full">
+    <!-- Dirección -->
+    <div class="w-full md:w-1/2 text-left text-sm text-zinc-800 dark:text-zinc-200">
+      <p class="mb-2 font-semibold">Dirección:</p>
+      <p>Charlotte, North Carolina, USA</p>
+    </div>
+
+    <!-- Enlaces de navegación -->
+    <div class="w-full md:w-1/2 flex flex-col items-center md:items-end mt-8 md:mt-0">
+      <ul class="flex flex-wrap items-center text-sm font-medium dark:text-white/90 sm:mt-0 justify-center md:justify-end">
+        <li>
+          <a href="/#sobre-mi" class="hover:underline me-4 md:me-6">Sobre mí</a>
+        </li>
+        <li>
+          <a id="contacto" href="mailto:hensteve250@gmail.com" class="hover:underline">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Derechos reservados centrados en la parte inferior -->
+  <div class="w-full text-center mt-8 text-sm text-zinc-800/90 dark:text-zinc-200/90">
+    <span>
+      © {currentYear}
+      <a href="https://stevdevblog.netlify.app/blog/" class="hover:underline">stevdev</a>. Casi todos los derechos reservados
+    </span>
+  </div>
+</footer>

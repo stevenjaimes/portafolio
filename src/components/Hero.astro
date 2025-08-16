@@ -6,9 +6,12 @@ import MailIcon from "@/components/icons/Mail.astro";
 import SocialPill from "@/components/SocialPill.astro";
 ---
 
-<div class="max-w-5xl">  
-  <div class="flex items-center justify-between">
-    <div class="flex flex-col max-w-2xl">
+<div class="max-w-5xl mx-auto px-4">
+  <!-- En móviles: columna, en escritorio: fila -->
+  <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+    
+    <!-- Texto -->
+    <div class="flex flex-col max-w-2xl text-center md:text-left">
       <h1
         class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
       >
@@ -22,7 +25,7 @@ import SocialPill from "@/components/SocialPill.astro";
           robustas y escalables</strong
         > Apasionado por la tecnología y el aprendizaje continuo.
       </p>
-      <nav class="flex flex-wrap gap-4 mt-8">
+      <nav class="flex flex-wrap gap-4 mt-8 justify-center md:justify-start">
         <SocialPill href="mailto:hensteve250@gmail.com">
           <MailIcon class="size-4" />
           Contáctame
@@ -32,22 +35,24 @@ import SocialPill from "@/components/SocialPill.astro";
           LinkedIn
         </SocialPill>
         <a
-        href="https://www.linkedin.com/in/henry-steven-jaimes/"
-        target="_blank"
-        rel="noopener"
-        class="flex items-center transition md:justify-center md:hover:scale-105"
+          href="https://www.linkedin.com/in/henry-steven-jaimes/"
+          target="_blank"
+          rel="noopener"
+          class="flex items-center transition md:hover:scale-105"
         >
-        <Badge>Disponible para trabajar</Badge>
+          <Badge>Disponible para trabajar</Badge>
         </a>
       </nav>
     </div>
+
+    <!-- Imagen -->
     <div class="flex items-center justify-center">
-    <img
-      src="/stevdev.webp"
-      alt={personalImageAlt}
-      class="order-1 object-cover w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-64 lg:h-64 p-1 md:order-2 rotate-3 lg:p-2 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
-      style="object-position: 50% 50%"
-    />
+      <img
+        src="/stevdev.webp"
+        alt={personalImageAlt}
+        class="object-cover w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 p-1 rotate-3 lg:p-2 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
+        style="object-position: 50% 50%"
+      />
     </div>
   </div>
 </div>
